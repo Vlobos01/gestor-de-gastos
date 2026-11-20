@@ -4,7 +4,7 @@ Aplicación web para registrar ingresos y gastos, organizarlos por categorías, 
 
 Es una app **local-first**: no hay backend, cuentas ni tracking. Los datos viven en el `localStorage` del navegador, se puede instalar como PWA y funciona sin conexión.
 
-**Demo:** [Vlobos01.github.io/gestor-de-gastos](https://Vlobos01.github.io/gestor-de-gastos/) · **Manual:** [MANUAL.md](MANUAL.md)
+**Demo:** [gestor-de-gastos-sandy.vercel.app](https://gestor-de-gastos-sandy.vercel.app/) · **Manual:** [MANUAL.md](MANUAL.md)
 
 [![CI](https://github.com/Vlobos01/gestor-de-gastos/actions/workflows/ci.yml/badge.svg)](https://github.com/Vlobos01/gestor-de-gastos/actions/workflows/ci.yml)
 [![Deploy](https://github.com/Vlobos01/gestor-de-gastos/actions/workflows/deploy.yml/badge.svg)](https://github.com/Vlobos01/gestor-de-gastos/actions/workflows/deploy.yml)
@@ -17,7 +17,7 @@ Es una app **local-first**: no hay backend, cuentas ni tracking. Los datos viven
 
 ## Demo en vivo
 
-**[https://Vlobos01.github.io/gestor-de-gastos/](https://Vlobos01.github.io/gestor-de-gastos/)**
+**[https://gestor-de-gastos-sandy.vercel.app/](https://gestor-de-gastos-sandy.vercel.app/)**
 
 Para probarla con información cargada: **⚙️ Ajustes → Cargar datos de ejemplo**.
 
@@ -347,17 +347,19 @@ La app se puede publicar en cualquier hosting estático. El repo queda listo par
 
 ### Vercel
 
+Producción: **https://gestor-de-gastos-sandy.vercel.app/**
+
 `vercel.json` define el framework, el comando de build, el directorio de salida y los headers de caché del service worker y del manifest.
 
 1. Entrá a [vercel.com/new](https://vercel.com/new) e importá el repositorio `Vlobos01/gestor-de-gastos`.
 2. Vercel detecta **Vite** automáticamente; no hace falta tocar build ni output.
 3. **Deploy**. Cada push a `main` genera un deploy de producción y cada PR un preview.
 
-La app queda en `https://<proyecto>.vercel.app/`, en la raíz del dominio, así que no hay subcarpeta.
+La app se publica en la raíz del dominio, así que no hay subcarpeta.
 
 ### GitHub Pages (alternativa)
 
-El repo incluye `.github/workflows/deploy.yml`, que corre los tests, compila y publica en cada push a `main`.
+También queda publicada una copia en **https://Vlobos01.github.io/gestor-de-gastos/** mediante `.github/workflows/deploy.yml`, que corre los tests, compila y publica en cada push a `main`.
 
 1. Subí el proyecto a un repositorio de GitHub.
 2. En el repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.

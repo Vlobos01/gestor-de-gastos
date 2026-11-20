@@ -2,7 +2,7 @@
 
 Guía paso a paso para usar **Gestor de gastos personales**.
 
-- 🌐 Demo: [Vlobos01.github.io/gestor-de-gastos](https://Vlobos01.github.io/gestor-de-gastos/)
+- 🌐 Demo: [gestor-de-gastos-sandy.vercel.app](https://gestor-de-gastos-sandy.vercel.app/)
 - 🏠 [Volver al README](README.md)
 
 La app funciona **sin cuentas y sin backend**: todo se guarda en el navegador. Podés probarla con datos reales o cargar los datos de ejemplo desde Ajustes.
@@ -28,7 +28,7 @@ La app funciona **sin cuentas y sin backend**: todo se guarda en el navegador. P
 
 ## 1. Primeros pasos
 
-1. Abrí la [demo](https://Vlobos01.github.io/gestor-de-gastos/) o ejecutá la app en local.
+1. Abrí la [demo](https://gestor-de-gastos-sandy.vercel.app/) o ejecutá la app en local.
 2. Si es tu primera vez, andá a **⚙️ Ajustes → Moneda** y elegí la moneda que usás.
 3. Cargá tu primer movimiento desde el formulario **Nuevo movimiento**.
 4. Opcional: definí presupuestos mensuales y creá tus propias categorías.
