@@ -19,6 +19,8 @@ Tus datos se guardan **solo en tu navegador** (`localStorage`): no hay backend, 
 
 Para probarla con información cargada: **⚙️ Ajustes → Cargar datos de ejemplo**.
 
+📖 ¿Es tu primera vez? Mirá el **[manual de uso](MANUAL.md)** con el detalle de cada función.
+
 ![Vista principal del gestor de gastos en tema claro](docs/screenshot-light.png)
 
 <details>
@@ -138,7 +140,8 @@ src/
 ├─ styles.css
 └─ types.ts
 
-docs/                     # capturas para el README
+MANUAL.md                 # manual de uso paso a paso
+docs/                     # capturas para el README y el manual
 public/
 ├─ favicon.svg
 ├─ pwa-192x192.png        # icono PWA
