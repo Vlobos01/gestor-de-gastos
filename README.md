@@ -12,7 +12,7 @@ Es una app **local-first**: no hay backend, cuentas ni tracking. Los datos viven
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-5-646cff?logo=vite&logoColor=white)
 ![PWA](https://img.shields.io/badge/PWA-installable-5a0fc8?logo=pwa&logoColor=white)
-![Tests](https://img.shields.io/badge/tests-114%20passing-059669)
+![Tests](https://img.shields.io/badge/tests-115%20passing-059669)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ## Demo en vivo
@@ -89,7 +89,7 @@ El proyecto está pensado como pieza de portfolio para mostrar React con TypeScr
 
 ### Experiencia
 
-- **Tema claro/oscuro** que sigue la preferencia del sistema y se puede cambiar manualmente.
+- **Tema oscuro por defecto**, con cambio a claro desde el encabezado; la elección se recuerda.
 - **Seis monedas**: ARS, USD, EUR, MXN, CLP y COP, formateadas con `Intl.NumberFormat`.
 - **Responsive** de escritorio a móvil.
 - **PWA instalable** con funcionamiento offline.
@@ -280,7 +280,7 @@ npm run preview   # sirve el build localmente
 
 ## Tests
 
-**114 tests en 16 archivos**, con Vitest, jsdom y Testing Library.
+**115 tests en 16 archivos**, con Vitest, jsdom y Testing Library.
 
 | Área | Qué cubre |
 | --- | --- |

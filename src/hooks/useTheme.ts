@@ -9,9 +9,9 @@ function readInitialTheme(): Theme {
     const stored = localStorage.getItem(THEME_KEY);
     if (stored === 'light' || stored === 'dark') return stored;
   } catch {
-    // Ignoramos el error y usamos la preferencia del sistema.
+    // Sin acceso a localStorage: usamos el tema por defecto.
   }
-  return window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  return 'dark';
 }
 
 export function useTheme() {

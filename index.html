@@ -1,13 +1,22 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      try {
+        var storedTheme = localStorage.getItem('gestor-gastos:theme');
+        document.documentElement.dataset.theme =
+          storedTheme === 'light' || storedTheme === 'dark' ? storedTheme : 'dark';
+      } catch (error) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    </script>
     <meta
       name="description"
       content="Gestor de gastos personales para registrar ingresos, gastos, presupuestos mensuales y ver gráficos. Tus datos se guardan en tu navegador."
     />
-    <meta name="theme-color" content="#4f46e5" />
+    <meta name="theme-color" content="#0d1017" />
     <meta property="og:title" content="Gestor de gastos personales" />
     <meta
       property="og:description"
