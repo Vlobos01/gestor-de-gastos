@@ -240,6 +240,7 @@ MANUAL.md                  # manual de uso paso a paso
 docs/                      # capturas para README y manual
 public/                    # favicon e iconos PWA / iOS
 .github/workflows/         # CI y deploy a GitHub Pages
+vercel.json                # configuración de deploy en Vercel
 ```
 
 Los tests viven junto a cada módulo (`*.test.ts` y `*.test.tsx`).
@@ -340,7 +341,21 @@ La suite usa consultas accesibles (`getByRole`, `getByLabelText`) y verifica el 
 - Para mover datos entre dispositivos: **Ajustes → Exportar JSON** en uno e **Importar JSON** en el otro.
 - La importación **reemplaza** todo el estado actual; no fusiona datos.
 
-## Deploy en GitHub Pages
+## Deploy
+
+La app se puede publicar en cualquier hosting estático. El repo queda listo para **Vercel** (deploy principal) y para **GitHub Pages** (alternativa), sin cambiar código.
+
+### Vercel
+
+`vercel.json` define el framework, el comando de build, el directorio de salida y los headers de caché del service worker y del manifest.
+
+1. Entrá a [vercel.com/new](https://vercel.com/new) e importá el repositorio `Vlobos01/gestor-de-gastos`.
+2. Vercel detecta **Vite** automáticamente; no hace falta tocar build ni output.
+3. **Deploy**. Cada push a `main` genera un deploy de producción y cada PR un preview.
+
+La app queda en `https://<proyecto>.vercel.app/`, en la raíz del dominio, así que no hay subcarpeta.
+
+### GitHub Pages (alternativa)
 
 El repo incluye `.github/workflows/deploy.yml`, que corre los tests, compila y publica en cada push a `main`.
 
