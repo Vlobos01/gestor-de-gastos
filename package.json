@@ -1,0 +1,36 @@
+{
+  "name": "gestor-de-gastos",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Gestor de gastos personales: ingresos, gastos, categorías, presupuestos mensuales y gráficos.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.3.1",
+    "@fortawesome/free-solid-svg-icons": "^7.3.1",
+    "@fortawesome/react-fontawesome": "^3.5.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "recharts": "2.15.4"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.4",
+    "jsdom": "^25.0.1",
+    "typescript": "5.6.3",
+    "vite": "^5.4.21",
+    "vitest": "^2.1.9"
+  }
+}
